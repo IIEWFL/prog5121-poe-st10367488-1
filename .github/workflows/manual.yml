@@ -25,7 +25,8 @@ jobs:
         run: ls
 
       - name: Compile classes
-        run: javac -d ./bin -cp "./testresources/junit-platform-console-standalone-1.9.2.jar" ./src/PROG5121 Project/Login.java ./src/PROG5121 Project/Task.java ./src/PROG5121 Project/TaskArray.java ./test/PROG5121 Project/LoginTest.java ./test/PROG5121 Project/TaskTest.java ./test/PROG5121 Project/TaskArrayTest.java
+        run: javac -d ./bin -cp "./testresources/junit-platform-console-standalone-1.9.2.jar" "./src/PROG5121 Project/Login.java" "./src/PROG5121 Project/Task.java" "./src/PROG5121 Project/TaskArray.java" "./test/PROG5121 Project/LoginTest.java" "./test/PROG5121 Project/TaskTest.java" "./test/PROG5121 Project/TaskArrayTest.java"
+
 
       - name: List contents of bin directory after compile
         run: ls ./bin/PROG5121 Project
